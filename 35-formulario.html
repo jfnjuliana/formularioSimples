@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+
+<body>
+
+    <h1>Formulário de Cadastro</h1>
+    <h5>Por favor, preencha os dados abaixo:</h5>
+
+    <form action="processa.php" method="post">
+
+        <label for="nomeCompleto">Nome Completo:</label><br>
+        <input type="text" id="nomeCompleto" required>
+        <br>
+        <br>
+        <label for="email">Digite seu E-mail:</label><br>
+        <input type="email" id="email" required>
+        <br>
+        <br>
+        <label for="comoConheceu">Como nos conheceu?:</label><br>
+        <input type="checkbox" id="comoConheceu" value="tv" checked>
+        <label for="comoConheceu">TV</label><br>
+        <input type="checkbox" id="comoConheceu" value="internet">
+        <label for="comoConheceu">Internet</label><br>
+        <input type="checkbox" id="comoConheceu" value="radio">
+        <label for="comoConheceu">Rádio</label>
+        <br>
+        <br>
+        <label for="maiorIdade">É maior de idade?:</label><br><br>
+        <input type="radio" value="sim" name="idade">Sim<br>
+        <input type="radio" value="nao" name="idade">Não
+        <br>
+        <br>
+        <input type="submit" value="Enviar Dados">
+
+    </form>
+</body>
+
+</html>
